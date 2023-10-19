@@ -13,7 +13,7 @@ useEffect(
 ,[]);
 const getMovieVideo = async () =>
 {
-    console.log(movieID);
+   
     const data = await fetch("https://api.themoviedb.org/3/movie/"+movieID+"/videos?language=en-US", options)
     const json = await data.json();
     const trailer =  json?.results?.filter((item)=>item?.type==="Trailer")

@@ -1,10 +1,11 @@
 import { options } from "../utils/constant";
 import { useDispatch } from "react-redux";
-import { addNPMovie } from "../utils/movieSlice";
+import { addNPMovie, addPopularMovies } from "../utils/movieSlice";
 import { useEffect } from "react";
 export const useFetechData = () =>
 {
     const dispatchAddNowPlaying = useDispatch(addNPMovie)
+    const dispatchAddPopular = useDispatch(addPopularMovies)
     useEffect(()=>{
         getNowPlaying();
         getPopular();
@@ -21,6 +22,12 @@ export const useFetechData = () =>
     {
      const data = await fetch('https://api.themoviedb.org/3/movie/popular?page=1', options);
      const json = await data.json();
-     console.log(json.results);
+     dispatchAddPopular(addPopularMovies(json.results));
+    }
+    const getUpcoming = async () =>
+    {
+     const data = await fetch('https://api.themoviedb.org/3/movie/upcoming?page=1', options);
+     const json = await data.json();
+     dispatchAddPopular(addPopularMovies(json.results));
     }
 }
