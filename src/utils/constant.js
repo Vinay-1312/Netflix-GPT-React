@@ -15,3 +15,5 @@ export const options = {
     {identifier:"french",Language:"French"},
 
   ]
+
+  export const OPenAIKey = "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";

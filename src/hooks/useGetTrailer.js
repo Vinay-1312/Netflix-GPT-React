@@ -21,4 +21,5 @@ const getMovieVideo = async () =>
     dispatchAddtrailer(addTrailerVideo(finalTrailer));
     
 }
+
 }

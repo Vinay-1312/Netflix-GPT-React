@@ -6,6 +6,7 @@ function App() {
   
   return (
     <Provider store={appStore}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <Body />
     </Provider>
   );
