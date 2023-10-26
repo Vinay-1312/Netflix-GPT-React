@@ -84,9 +84,9 @@ const Login = () =>
         <div>
         <Header />
         <div className="absolute">
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/3e4ea6b3-0687-49d4-b239-72a8a8467e4d/GB-en-20231009-popsignuptwoweeks-perspective_alpha_website_large.jpg" alt="logo" /> 
+            <img className="h-screen w-screen object-cover"src="https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/3e4ea6b3-0687-49d4-b239-72a8a8467e4d/GB-en-20231009-popsignuptwoweeks-perspective_alpha_website_large.jpg" alt="logo" /> 
             </div>
-        <form onSubmit = {(e)=> e.preventDefault()}className=" w-3/12 p-12 bg-black absolute my-36 mx-auto right-0 left-0 text-white bg-opacity-80">
+        <form onSubmit = {(e)=> e.preventDefault()}className="w-full sm:full md:w-3/12 p-12 bg-black absolute my-36 mx-auto right-0 left-0 text-white bg-opacity-80">
             <h1 className="font-bold text-3xl py-4">{isSignIn ? "Sign In" : "Sign Up"}</h1>
             {!isSignIn && (<input type="text"  ref={name} placeholder="Name" className="p-4 my-4 w-full bg-gray-700 rounded-lg required"></input>)}
             <input type="email" ref={email} placeholder="Email Address" className="p-4 my-4 w-full bg-gray-700 rounded-lg required"></input>

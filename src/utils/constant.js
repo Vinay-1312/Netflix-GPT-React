@@ -16,4 +16,4 @@ export const options = {
 
   ]
 
-  export const OPenAIKey = "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";
+  export const OPenAIKey = "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";
