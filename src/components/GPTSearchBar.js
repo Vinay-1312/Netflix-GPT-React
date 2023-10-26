@@ -46,7 +46,7 @@ const GPTSearchBar = () =>
     return(<div className="pt-[35%] flex justify-center md:pt-[10%]">
        
         <form onSubmit = {(e)=>e.preventDefault()} className="bg-gray-800 w-full md:w-1/2 grid grid-cols-12">
-            <input type="text" className="p-4 m-4 col-span-10 required"  ref={query} placeholder={lang?.[identifier].Placeholder} ></input>
+            <input type="text" className="p-4 m-8 md:m-4 col-span-10 required"  ref={query} placeholder={lang?.[identifier].Placeholder} ></input>
             <button className="md:py-2 md:px-2 md:m-4 p-2  text-xs md:text-sm lg:text-base bg-red-400 rounded-full text-white font-bold col-span-2" onClick={handchatgptRequest}>{lang?.[identifier].Search}</button>
          </form>
 
