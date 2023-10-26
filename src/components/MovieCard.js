@@ -34,7 +34,7 @@ const MovieCard = ({movie}) =>
               className="w-full h-full"
               src={`https://www.youtube.com/embed/${movie?.key}?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1`}
               style={{
-                position: 'absolute',
+                
                 width: "200px",
                 height:"300px",
                 zIndex: 1, // Set a lower z-index value
