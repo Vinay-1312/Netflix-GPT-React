@@ -16,5 +16,5 @@ export const options = {
 
   ]
 
-  export const abcd = process.env.Api;
+  export const abcd = process.env.REACT_APP_OPENAI_API_KEY;
   
