@@ -16,4 +16,4 @@ export const options = {
 
   ]
 
-  export const OPenAIKey = process.env.Api;
+  export const abcd = process.env.Api;
